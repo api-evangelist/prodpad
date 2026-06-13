@@ -1,0 +1,178 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "prodpad": "https://www.prodpad.com/vocab#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "image": "schema:image",
+    "dateCreated": {
+      "@id": "schema:dateCreated",
+      "@type": "xsd:date"
+    },
+    "dateModified": {
+      "@id": "schema:dateModified",
+      "@type": "xsd:date"
+    },
+
+    "SoftwareApplication": "schema:SoftwareApplication",
+    "WebAPI": "schema:WebAPI",
+    "BlogPosting": "schema:BlogPosting",
+
+    "Idea": {
+      "@id": "prodpad:Idea",
+      "@context": {
+        "id": "@id",
+        "title": "schema:name",
+        "description": "schema:description",
+        "status": "prodpad:ideaStatus",
+        "tags": "schema:keywords",
+        "created_at": {
+          "@id": "schema:dateCreated",
+          "@type": "xsd:dateTime"
+        },
+        "updated_at": {
+          "@id": "schema:dateModified",
+          "@type": "xsd:dateTime"
+        },
+        "votes": "prodpad:voteCount",
+        "comments": "prodpad:commentCount"
+      }
+    },
+
+    "Feedback": {
+      "@id": "prodpad:Feedback",
+      "@context": {
+        "id": "@id",
+        "description": "schema:description",
+        "source": "schema:provider",
+        "created_at": {
+          "@id": "schema:dateCreated",
+          "@type": "xsd:dateTime"
+        },
+        "contact": "schema:Person",
+        "company": "schema:Organization",
+        "idea": "prodpad:linkedIdea"
+      }
+    },
+
+    "Persona": {
+      "@id": "prodpad:Persona",
+      "@context": {
+        "id": "@id",
+        "name": "schema:name",
+        "description": "schema:description",
+        "created_at": {
+          "@id": "schema:dateCreated",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "Roadmap": {
+      "@id": "prodpad:Roadmap",
+      "@context": {
+        "id": "@id",
+        "name": "schema:name",
+        "description": "schema:description",
+        "created_at": {
+          "@id": "schema:dateCreated",
+          "@type": "xsd:dateTime"
+        },
+        "updated_at": {
+          "@id": "schema:dateModified",
+          "@type": "xsd:dateTime"
+        },
+        "columns": "prodpad:roadmapColumn"
+      }
+    },
+
+    "OKR": {
+      "@id": "prodpad:OKR",
+      "@context": {
+        "id": "@id",
+        "name": "schema:name",
+        "description": "schema:description",
+        "objective": "prodpad:objective",
+        "keyResults": "prodpad:keyResult",
+        "created_at": {
+          "@id": "schema:dateCreated",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "Product": {
+      "@id": "prodpad:Product",
+      "@context": {
+        "id": "@id",
+        "name": "schema:name",
+        "description": "schema:description",
+        "created_at": {
+          "@id": "schema:dateCreated",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "Tag": {
+      "@id": "prodpad:Tag",
+      "@context": {
+        "id": "@id",
+        "name": "schema:name"
+      }
+    },
+
+    "Webhook": {
+      "@id": "prodpad:Webhook",
+      "@context": {
+        "id": "@id",
+        "url": "schema:url",
+        "event": "schema:action",
+        "active": "prodpad:isActive",
+        "created_at": {
+          "@id": "schema:dateCreated",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "Contact": {
+      "@id": "schema:Person",
+      "@context": {
+        "id": "@id",
+        "name": "schema:name",
+        "email": "schema:email",
+        "company": "schema:worksFor",
+        "created_at": {
+          "@id": "schema:dateCreated",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "Company": {
+      "@id": "schema:Organization",
+      "@context": {
+        "id": "@id",
+        "name": "schema:name",
+        "created_at": {
+          "@id": "schema:dateCreated",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "ErrorResponse": {
+      "@id": "prodpad:ErrorResponse",
+      "@context": {
+        "success": "prodpad:success",
+        "developer_message": "prodpad:developerMessage",
+        "user_message": "prodpad:userMessage"
+      }
+    }
+  }
+}
