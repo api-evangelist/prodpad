@@ -1,0 +1,49 @@
+name: ProdPad API Rate Limits
+description: >-
+  ProdPad currently applies no hard numerical rate limits to its REST API.
+  However, the platform reserves the right to block API keys and IP addresses
+  that are deemed to be abusing the service. All requests must be made over
+  HTTPS; HTTP requests receive a 403 Forbidden response.
+specificationVersion: '0.1'
+url: https://help.prodpad.com/article/660-working-with-the-prodpad-api
+rateLimits:
+  - name: Default API Limit
+    description: >-
+      No explicit rate limit is enforced at this time. ProdPad will block the
+      API key and originating IP address if abuse is detected.
+    requestsPerWindow: unlimited
+    windowDuration: N/A
+    scope: per API key / per IP
+    enforcement: discretionary abuse blocking
+    notes:
+      - All requests must use HTTPS (SSL). HTTP returns 403.
+      - Authentication via Bearer token in the Authorization header is required
+        on every request.
+      - Violation of acceptable-use policies may result in permanent API key
+        revocation.
+httpCodes:
+  - code: 200
+    meaning: Successful call
+  - code: 201
+    meaning: Object created successfully
+  - code: 400
+    meaning: Request error (bad input)
+  - code: 401
+    meaning: No API key supplied or invalid key
+  - code: 403
+    meaning: HTTP access denied or forbidden resource (also returned for plain HTTP)
+  - code: 404
+    meaning: Resource not found
+errorFormat:
+  description: >-
+    Error responses are returned as JSON objects containing three fields.
+  fields:
+    - name: success
+      type: boolean
+      description: Always false for error responses
+    - name: developer_message
+      type: string
+      description: Technical description of the error for developers
+    - name: user_message
+      type: string
+      description: Human-readable error message suitable for end-user display

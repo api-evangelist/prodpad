@@ -1,0 +1,89 @@
+name: ProdPad FinOps Framework
+description: >-
+  FOCUS-aligned FinOps reference for managing and optimising ProdPad
+  subscription spend across product management teams. ProdPad charges per
+  editor seat per month on a modular basis (Roadmaps, Ideas, Feedback).
+  Reviewer seats are always free, making correct role assignment a key cost
+  lever.
+specificationVersion: '1.0'
+url: https://www.prodpad.com/pricing/
+provider: ProdPad
+pricingModel: per-editor SaaS subscription (modular)
+billingGranularity: monthly or annual
+costDrivers:
+  - name: Editor Seats
+    description: >-
+      The primary cost driver. Each named editor incurs a monthly charge per
+      active module. Auditing and right-sizing editor counts is the highest-
+      impact optimisation action.
+    unit: editor/month
+    exampleRange: $30–$55 per editor per month depending on module and tier
+  - name: Module Selection
+    description: >-
+      Each of the three modules (Roadmaps, Ideas, Feedback) is priced
+      independently. Teams only pay for the modules they activate.
+    modules:
+      - Roadmaps Essentials: $30/editor/month
+      - Roadmaps Advanced: $55/editor/month
+      - Ideas Essentials: $30/editor/month
+      - Ideas Advanced: $45/editor/month
+      - Feedback Essentials: $30/editor/month
+      - Feedback Advanced: $45/editor/month
+  - name: Power-Up Add-ons
+    description: >-
+      Optional capability extensions such as OKRs or Portfolio views that
+      add incremental per-editor cost.
+    unit: editor/month
+    exampleRange: from $10/editor/month per add-on
+  - name: Billing Cycle
+    description: >-
+      Monthly billing carries a 20% premium versus annual commitment. Switching
+      active subscriptions to annual is a straightforward cost reduction lever.
+    annualDiscount: 20%
+optimisationActions:
+  - action: Audit editor vs reviewer roles
+    description: >-
+      Users who only need to view and comment can be Reviewers (free). Downgrade
+      editors who do not create or edit content to save full per-seat costs.
+    estimatedImpact: high
+  - action: Switch to annual billing
+    description: >-
+      Committing to annual billing saves 20% on all module costs versus
+      month-to-month.
+    estimatedImpact: medium
+  - action: Consolidate modules
+    description: >-
+      Evaluate whether all three modules are in active use. Disabling unused
+      modules removes the per-editor charge for that module.
+    estimatedImpact: medium
+  - action: Downgrade Advanced to Essentials
+    description: >-
+      If advanced features (custom scoring, advanced analytics) are not
+      actively used, downgrading to the Essentials tier saves $10–$25 per
+      editor per month per module.
+    estimatedImpact: medium
+  - action: Remove inactive editors
+    description: >-
+      Regular quarterly audits to remove or convert stale editor accounts
+      eliminates unused seat spend immediately.
+    estimatedImpact: high
+  - action: Defer power-ups
+    description: >-
+      Add-ons such as OKRs and Portfolio views add $10+/editor/month. Only
+      activate if the feature is embedded in active product workflows.
+    estimatedImpact: low-medium
+reporting:
+  - metric: Cost per Editor
+    formula: (sum of active module costs + add-ons) / active editor count
+  - metric: Module Utilisation
+    formula: active users per module / total editor seats
+  - metric: Reviewer Ratio
+    formula: reviewer seats / total seats; higher ratios indicate better cost efficiency
+  - metric: Annual vs Monthly Premium
+    formula: (monthly_rate * 12 - annual_rate) / annual_rate * 100
+notes:
+  - Enterprise plans are negotiated directly with ProdPad sales and may include
+    volume discounts, custom payment terms, and SLA commitments.
+  - ProdPad does not currently charge API usage fees; API access is bundled
+    with all paid subscription plans.
+  - Free trial (7–30+ days) is available to evaluate modules before committing.

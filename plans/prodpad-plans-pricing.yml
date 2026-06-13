@@ -1,0 +1,110 @@
+name: ProdPad Plans and Pricing
+description: >-
+  ProdPad uses a modular per-editor subscription model. Customers select one or
+  more core modules (Roadmaps, Ideas, Feedback) at Essentials or Advanced tiers,
+  billed monthly or annually. Unlimited free Reviewer seats are included on all
+  paid plans. An Enterprise tier is available via sales for large organisations.
+specificationVersion: '0.1'
+url: https://www.prodpad.com/pricing/
+plans:
+  - name: Roadmaps Essentials
+    description: >-
+      Visual product roadmapping with essential strategy and planning tools.
+    price: 30
+    unit: editor/month
+    billingCycle: monthly
+    annualDiscount: 20%
+    features:
+      - Visual product roadmaps
+      - Strategic goals alignment
+      - Stakeholder sharing
+      - Unlimited Reviewers
+      - REST API access
+  - name: Roadmaps Advanced
+    description: >-
+      Full-featured roadmapping with advanced planning, OKR linking, and
+      portfolio management.
+    price: 55
+    unit: editor/month
+    billingCycle: monthly
+    annualDiscount: 20%
+    features:
+      - All Roadmaps Essentials features
+      - OKR and goal alignment
+      - Portfolio views (add-on)
+      - Advanced analytics
+      - REST API access
+  - name: Ideas Essentials
+    description: >-
+      Product backlog and idea management for capturing and prioritising
+      product opportunities.
+    price: 30
+    unit: editor/month
+    billingCycle: monthly
+    annualDiscount: 20%
+    features:
+      - Idea capture and scoring
+      - User personas
+      - Backlog prioritisation
+      - Unlimited Reviewers
+      - REST API access
+  - name: Ideas Advanced
+    description: >-
+      Advanced idea management with deeper prioritisation frameworks and
+      reporting.
+    price: 45
+    unit: editor/month
+    billingCycle: monthly
+    annualDiscount: 20%
+    features:
+      - All Ideas Essentials features
+      - Advanced prioritisation
+      - Custom scoring models
+      - REST API access
+  - name: Feedback Essentials
+    description: >-
+      Customer feedback collection and linking to product ideas.
+    price: 30
+    unit: editor/month
+    billingCycle: monthly
+    annualDiscount: 20%
+    features:
+      - Feedback capture
+      - Linking feedback to ideas
+      - Customer segmentation
+      - Unlimited Reviewers
+      - REST API access
+  - name: Feedback Advanced
+    description: >-
+      Advanced feedback management with enhanced analytics and reporting.
+    price: 45
+    unit: editor/month
+    billingCycle: monthly
+    annualDiscount: 20%
+    features:
+      - All Feedback Essentials features
+      - Advanced reporting
+      - Feedback trend analysis
+      - REST API access
+  - name: Enterprise
+    description: >-
+      Custom enterprise agreement for large organisations requiring advanced
+      security, SSO, dedicated support, and tailored contracts.
+    price: custom
+    unit: editor/month
+    billingCycle: annual
+    features:
+      - All module features
+      - SSO / SAML
+      - Dedicated customer success
+      - Custom contracts and invoicing
+      - SLA guarantees
+      - REST API access
+notes:
+  - Modules can be combined (e.g. Ideas + Feedback) for a complete stack.
+  - Power-ups such as OKRs and Portfolio views are available as add-ons from
+    $10 per editor per month.
+  - Annual billing saves 20% versus monthly billing.
+  - Free trial of at least 7 days is available; extendable to 30+ days via
+    onboarding tasks.
+  - Reviewer seats are always free and unlimited on all paid plans.

@@ -1,0 +1,72 @@
+aid: prodpad
+name: ProdPad
+description: >-
+  ProdPad is an end-to-end product management platform with a REST API for
+  managing the product backlog, user personas, customer feedback, ideas, and
+  linking features to OKRs. The API enables integration with third-party
+  applications such as ticket systems, voice-of-customer tools, and CRMs,
+  allowing teams to push ideas, retrieve feedback, manage roadmaps, and trigger
+  webhooks programmatically.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/prodpad/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+type: Index
+tags:
+  - Product Management
+  - Roadmaps
+  - Ideas
+  - Feedback
+  - OKRs
+  - Backlog
+  - Personas
+apis:
+  - aid: prodpad:prodpad-api
+    name: ProdPad API
+    description: >-
+      REST API for ProdPad's product management platform providing programmatic
+      access to ideas, customer feedback, personas, roadmaps, OKRs, and
+      webhooks. Authenticate with a bearer token and interact with resources
+      over HTTPS.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://help.prodpad.com/article/660-working-with-the-prodpad-api
+    baseURL: https://api.prodpad.com/v1
+    tags:
+      - Product Management
+      - Ideas
+      - Feedback
+      - Roadmaps
+      - OKRs
+      - Personas
+    properties:
+      - type: Documentation
+        url: https://help.prodpad.com/article/660-working-with-the-prodpad-api
+      - type: Authentication
+        url: https://help.prodpad.com/article/660-working-with-the-prodpad-api
+common:
+  - type: Website
+    url: https://www.prodpad.com/
+  - type: Documentation
+    url: https://help.prodpad.com/article/660-working-with-the-prodpad-api
+  - type: GitHubOrg
+    url: https://github.com/prodpad
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/prodpad
+  - type: Blog
+    url: https://www.prodpad.com/blog/
+  - type: Pricing
+    url: https://www.prodpad.com/pricing/
+  - type: X
+    url: https://x.com/prodpad
+  - type: Integrations
+    url: https://www.prodpad.com/integrations/rest-api-webhooks/
+  - type: Plans
+    url: plans/prodpad-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/prodpad-rate-limits.yml
+  - type: FinOps
+    url: finops/prodpad-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
