@@ -7,7 +7,7 @@ description: >-
   applications such as ticket systems, voice-of-customer tools, and CRMs,
   allowing teams to push ideas, retrieve feedback, manage roadmaps, and trigger
   webhooks programmatically.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/prodpad/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -29,7 +29,7 @@ apis:
       access to ideas, customer feedback, personas, roadmaps, OKRs, and
       webhooks. Authenticate with a bearer token and interact with resources
       over HTTPS.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://help.prodpad.com/article/660-working-with-the-prodpad-api
     baseURL: https://api.prodpad.com/v1
     tags:
