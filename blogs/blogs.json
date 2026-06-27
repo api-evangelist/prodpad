@@ -1,123 +1,13 @@
 {
-  "provider": "prodpad",
-  "blogURL": "https://www.prodpad.com/blog/",
-  "pulled": "2026-06-13",
-  "posts": [
-    {
-      "title": "Why Your Feedback is Stuck in Slack",
-      "url": "https://www.prodpad.com/blog/feedback-in-slack/",
-      "author": "Janna Bastow",
-      "date": "2026-06-12",
-      "description": "Explores how customer feedback shared in Slack channels gets lost and fails to inform product decisions."
-    },
-    {
-      "title": "Product Pricing Strategies: Choosing the Right Approach for You",
-      "url": "https://www.prodpad.com/blog/product-pricing-strategies/",
-      "author": "Janna Bastow",
-      "date": "2026-05-28",
-      "description": "Examines pricing strategy decisions and their impact on product success."
-    },
-    {
-      "title": "6 Product Backlog Examples: Backlog Management Without the Chaos",
-      "url": "https://www.prodpad.com/blog/product-backlog-examples/",
-      "author": "Janna Bastow",
-      "date": "2026-05-14",
-      "description": "Provides practical examples for organizing product backlogs effectively."
-    },
-    {
-      "title": "10 Great Product Vision Examples",
-      "url": "https://www.prodpad.com/blog/product-vision-examples/",
-      "author": "Janna Bastow",
-      "date": "2026-05-07",
-      "description": "Showcases vision statement examples that actually drive team alignment."
-    },
-    {
-      "title": "Your Backlog Has a Hierarchy Problem",
-      "url": "https://www.prodpad.com/blog/backlog-hierarchy-problem/",
-      "author": "Janna Bastow",
-      "date": "2026-04-30",
-      "description": "Addresses how mixing strategic initiatives with minor requests creates confusion."
-    },
-    {
-      "title": "Honesty Scales Better Than Certainty: Why Time-Based Roadmaps Are Promises You Can't Keep",
-      "url": "https://www.prodpad.com/blog/honesty-scales-better-than-certainty/",
-      "author": "Janna Bastow",
-      "date": "2026-04-23",
-      "description": "Argues against rigid timeline roadmaps in favor of more realistic planning approaches."
-    },
-    {
-      "title": "Why Feedback Voting Introduces Bias Into Your Product Decisions",
-      "url": "https://www.prodpad.com/blog/feedback-voting-bias-in-product-decisions/",
-      "author": "Janna Bastow",
-      "date": "2026-04-16",
-      "description": "Explains how voting systems skew product prioritization toward loudest voices."
-    },
-    {
-      "title": "The Only Product Vision Template You'll Ever Need",
-      "url": "https://www.prodpad.com/blog/product-vision-template/",
-      "author": "Janna Bastow",
-      "date": "2025-11-28",
-      "description": "Provides a structured framework for articulating product direction and business alignment."
-    },
-    {
-      "title": "The Best Product Management Books for 2025: 16 Picks from Product Experts",
-      "url": "https://www.prodpad.com/blog/best-product-management-books/",
-      "author": "Janna Bastow",
-      "date": "2025-03-27",
-      "description": "Curated selection of recommended reading for product professionals."
-    },
-    {
-      "title": "The 17 Best Product Management Newsletters of 2025",
-      "url": "https://www.prodpad.com/blog/best-product-management-newsletters/",
-      "author": "Janna Bastow",
-      "date": "2025-01-14",
-      "description": "Guide to staying current with industry trends through quality newsletter subscriptions."
-    },
-    {
-      "title": "Theme-Based Product Roadmaps: Something Everyone Can Understand",
-      "url": "https://www.prodpad.com/blog/how-to-build-a-product-roadmap-everyone-understands/",
-      "author": "Andrea Saez",
-      "date": "2023-07-27",
-      "description": "Advocates for organizing roadmaps around outcomes rather than features."
-    },
-    {
-      "title": "The Product Tree Game: Our Favorite Way To Prioritize Features",
-      "url": "https://www.prodpad.com/blog/product-tree-game/",
-      "author": "Janna Bastow",
-      "date": "2023-06-22",
-      "description": "Describes a collaborative prioritization technique for engaging teams in feature decisions."
-    },
-    {
-      "title": "Product Manager Skills: The Best Way to Gain Experience?",
-      "url": "https://www.prodpad.com/blog/product-manager-skills-and-experience/",
-      "author": "Janna Bastow",
-      "date": "2022-04-07",
-      "description": "Advises aspiring PMs on building relevant experience for the role."
-    },
-    {
-      "title": "The Incentives Problem",
-      "url": "https://www.prodpad.com/blog/the-incentives-problem/",
-      "author": "Janna Bastow",
-      "date": "2021-08-31",
-      "description": "Examines how misaligned organizational incentives create workplace friction."
-    },
-    {
-      "title": "Avoiding the Agency Trap - Product Led Companies Scale-Up",
-      "url": "https://www.prodpad.com/blog/avoiding-the-agency-trap/",
-      "author": "Janna Bastow",
-      "date": "2021-07-09",
-      "description": "Discusses scaling challenges when transitioning from agency to product-focused models."
-    },
-    {
-      "title": "Six Pitfalls to Avoid When Implementing Objectives and Key Results",
-      "url": "https://www.prodpad.com/blog/six-pitfalls-to-avoid-when-implementing-objectives-and-key-results/",
-      "author": "Wes Galliher",
-      "date": "2020-07-06",
-      "description": "Outlines common mistakes when establishing OKR frameworks."
-    }
-  ],
   "repo": "prodpad",
   "feeds": [
+    {
+      "source": "https://www.prodpad.com/blog/feed/",
+      "feed_url": "https://www.prodpad.com/blog/feed/",
+      "title": "",
+      "saved": 1,
+      "method": "feed"
+    },
     {
       "source": "https://www.linkedin.com/company/prodpad",
       "feed_url": "https://www.linkedin.com/company/prodpad",
@@ -126,6 +16,6 @@
       "method": "none"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:03:07Z",
+  "post_count": 2
 }
