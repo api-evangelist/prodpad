@@ -45,6 +45,10 @@ apis:
       - type: Authentication
         url: https://help.prodpad.com/article/660-working-with-the-prodpad-api
 common:
+  - type: TrustCenter
+    url: security/prodpad-trust-center.yml
+  - type: DomainSecurity
+    url: security/prodpad-domain-security.yml
   - type: Website
     url: https://www.prodpad.com/
   - type: Documentation
