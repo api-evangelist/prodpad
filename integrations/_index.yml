@@ -66,3 +66,16 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: prodpad-intercom-own
+  label: Intercom (own)
+  partner: intercom
+  partner_name: Intercom (own)
+  category: Surveys & Feedback
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.intercom.com/app-store/?app_package_code=prodpad
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
